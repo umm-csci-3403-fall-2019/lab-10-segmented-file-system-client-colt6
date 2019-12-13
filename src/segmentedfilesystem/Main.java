@@ -8,8 +8,8 @@ import java.net.InetAddress;
 public class Main {
     
     public static void main(String[] args) throws IOException {
-        byte[] sendBuf = new byte[1028];
-        int port = 8080;
+        byte[] sendBuf = new byte[0];
+        int port = 6014;
 
 
         try {
@@ -18,9 +18,13 @@ public class Main {
             DatagramPacket packet = new DatagramPacket(sendBuf, sendBuf.length, inetaddress, port);
             socket.send(packet);
 
+
             while(true){
+                byte[] newBuf = new byte[1028];
+                packet = new DatagramPacket(newBuf,)
 
             }
+
 
 
 
